@@ -37,7 +37,7 @@ import com.learn.common.jdbc.jpa.dao.RepositoryHelper;
 import com.learn.common.jdbc.jpa.dao.callback.SearchCallback;
 import com.learn.common.jdbc.jpa.dao.support.annotation.QueryJoin;
 import com.learn.common.jdbc.jpa.entity.search.Searchable;
-import com.learn.common.jdbc.jpa.plugin.entity.LogicDeleteable;
+import com.learn.common.plugin.entity.LogicDeleteable;
 
 import static org.springframework.data.jpa.repository.query.QueryUtils.toOrders;
 

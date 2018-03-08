@@ -1,21 +1,54 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-  	<groupId>com.learn</groupId>
-  	<artifactId>jLearn-parent</artifactId>
-  	<version>0.0.1-SNAPSHOT</version>
-  	<relativePath>../jLearn-parent/pom.xml</relativePath>
-  </parent>
-  
-  <artifactId>jLearn-common</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  <name>common</name>
-  
-  <modules>
-  	<module>jLearn-base</module>
-  	<module>jLearn-jdbc</module>
-  	<module>jLearn-rbac</module>
-  	<module>jLearn-jdbc-jpa</module>
-  </modules>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.learn</groupId>
+		<artifactId>jLearn-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../jLearn-parent/pom.xml</relativePath>
+	</parent>
+
+	<artifactId>jLearn-common</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>common</name>
+
+	<modules>
+		<module>jLearn-base</module>
+		<module>jLearn-rbac</module>
+		<module>jLearn-jdbc-jpa</module>
+		<module>jLearn-service-jpa</module>
+	</modules>
+
+	<properties>
+		<shiro.version>1.2.2</shiro.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-core</artifactId>
+			<version>${shiro.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-ehcache</artifactId>
+			<version>${shiro.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-web</artifactId>
+			<version>${shiro.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-quartz</artifactId>
+			<version>${shiro.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-spring</artifactId>
+			<version>${shiro.version}</version>
+		</dependency>
+	</dependencies>
 </project>

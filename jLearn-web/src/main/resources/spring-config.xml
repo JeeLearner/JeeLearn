@@ -121,7 +121,7 @@
     <jpa:repositories
             base-package="com.learn.**.dao"
             repository-impl-postfix="Impl"
-            factory-class="com.learn.common.jdbc.support.jpa.SimpleBaseRepositoryFactoryBean"
+            factory-class="com.learn.common.jdbc.jpa.dao.support.SimpleBaseRepositoryFactoryBean"
             entity-manager-factory-ref="entityManagerFactory"
             transaction-manager-ref="transactionManager">
 
@@ -174,18 +174,17 @@
     <!--设置查询字符串转换器的conversion service-->
     <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
         <property name="staticMethod"
-                  value="com.sishuok.es.common.entity.search.utils.SearchableConvertUtils.setConversionService"/>
+                  value="com.learn.common.jdbc.jpa.entity.search.utils.SearchableConvertUtils.setConversionService"/>
         <property name="arguments" ref="conversionService"/>
     </bean>
 
     <!--设置BaseRepositoryImplHelper辅助类所需的entityManagerFactory-->
     <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
         <property name="staticMethod"
-                  value="com.sishuok.es.common.repository.RepositoryHelper.setEntityManagerFactory"/>
+                  value="com.learn.common.jdbc.jpa.dao.RepositoryHelper.setEntityManagerFactory"/>
         <property name="arguments" ref="entityManagerFactory"/>
     </bean>
 
     <import resource="classpath:spring-config-cache.xml"/>
-    <import resource="classpath:spring-config-shiro.xml"/>
 
 </beans>

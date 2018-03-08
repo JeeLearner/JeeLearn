@@ -10,4 +10,11 @@
   <artifactId>jLearn-modules</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>modules</name>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.learn</groupId>
+  		<artifactId>jLearn-rbac</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 </project>

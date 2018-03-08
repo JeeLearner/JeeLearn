@@ -7,7 +7,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>jLearn-jdbc-jpa</artifactId>
-	<name>jLearn-jdbc-jpa</name>
+	<name>jdbc-jpa</name>
 
 	<properties>
 		<spring.data.jpa.version>1.4.1.RELEASE</spring.data.jpa.version>

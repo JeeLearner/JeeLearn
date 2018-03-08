@@ -10,9 +10,9 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.learn.common.jdbc.jpa.entity.SchoolType;
-import com.learn.common.jdbc.jpa.entity.Sex;
-import com.learn.common.jdbc.jpa.entity.User;
+import com.learn.common.jdbc.jpa.support.entity.SchoolType;
+import com.learn.common.jdbc.jpa.support.entity.Sex;
+import com.learn.common.jdbc.jpa.support.entity.User;
 
 
 public interface UserDao extends BaseRepository<User, Long>, JpaSpecificationExecutor<User> {

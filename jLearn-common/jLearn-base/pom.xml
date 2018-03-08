@@ -5,6 +5,9 @@
     <artifactId>jLearn-common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
+  
   <artifactId>jLearn-base</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
   <name>base</name>
+  
 </project>
