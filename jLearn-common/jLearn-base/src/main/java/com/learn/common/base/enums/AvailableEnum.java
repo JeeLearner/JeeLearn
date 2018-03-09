@@ -1,4 +1,4 @@
-package com.learn.common.jdbc.jpa.entity.enums;
+package com.learn.common.base.enums;
 
 /**
  * 枚举    可用/不可用

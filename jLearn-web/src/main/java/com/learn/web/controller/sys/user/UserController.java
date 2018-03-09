@@ -15,11 +15,12 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	
-	@RequestMapping("")
+	@RequestMapping("a")
 	@ResponseBody
 	public String testService(){
-		User user = userService.findByUsername("showcase");
-		return user.getEmail();
+		//User user = userService.findByUsername("showcase");
+		User user = userService.findByEmail("showcase@sishuok.com");
+		return user.getUsername();
 		
 	}
 }

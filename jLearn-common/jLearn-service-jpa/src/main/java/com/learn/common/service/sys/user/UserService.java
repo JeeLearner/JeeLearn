@@ -22,4 +22,6 @@ public interface UserService{
 	 * 登录
 	 */
 	public User login(String username, String password);
+	
+	public User findOne(Long id);
 }

@@ -1,0 +1,6 @@
+jLearn-jdbc-jpa
+	com.learn.common.plugin.service.BaseTreeableService.java
+	
+jLearn-service-jpa
+	com.learn.common.service.sys.organization.OrganizationServiceImpl.java
+	

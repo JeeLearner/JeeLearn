@@ -10,4 +10,12 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>base</name>
   
+  <dependencies>
+  	<dependency>
+  		<groupId>com.learn</groupId>
+  		<artifactId>jLearn-parent</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  		<type>pom</type>
+  	</dependency>
+  </dependencies>
 </project>

@@ -11,16 +11,17 @@
 
 	<properties>
 		<spring.data.jpa.version>1.4.1.RELEASE</spring.data.jpa.version>
-		
-		<hibernate.core.version>4.3.0.Final</hibernate.core.version>
-        <hibernate.ehcache.version>4.3.0.Final</hibernate.ehcache.version>
-        <hibernate.commons.annotaions.version>4.0.4.Final</hibernate.commons.annotaions.version>
-        <hibernate.validator.version>5.0.2.Final</hibernate.validator.version>
 
-        <javassist.version>3.18.0-GA</javassist.version>
+		<hibernate.core.version>4.3.0.Final</hibernate.core.version>
+		<hibernate.ehcache.version>4.3.0.Final</hibernate.ehcache.version>
+		<hibernate.commons.annotaions.version>5.0.1.Final</hibernate.commons.annotaions.version>
+		<hibernate.validator.version>5.0.2.Final</hibernate.validator.version>
+
+		<javassist.version>3.18.0-GA</javassist.version>
 	</properties>
 
 	<dependencies>
+
 		<!-- spring jpa -->
 		<dependency>
 			<groupId>org.springframework.data</groupId>

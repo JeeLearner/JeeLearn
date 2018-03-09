@@ -33,9 +33,7 @@ import com.learn.common.sys.user.entity.UserStatus;
 public class UserServiceImpl extends BaseService<User, Long> implements UserService {
 
 	@Autowired
-	private UserDao getUserDao() {
-		return (UserDao) baseRepository;
-	}
+	private UserDao userDao;
 
 	@Autowired
 	private UserStatusHistoryService userStatusHistoryService;
@@ -77,7 +75,7 @@ public class UserServiceImpl extends BaseService<User, Long> implements UserServ
 	}
 
 	public UserOrganizationJob findUserOrganizationJob(UserOrganizationJob userOrganizationJob) {
-		return getUserDao().findUserOrganization(userOrganizationJob.getUser(), userOrganizationJob.getOrganizationId(),
+		return userDao.findUserOrganization(userOrganizationJob.getUser(), userOrganizationJob.getOrganizationId(),
 				userOrganizationJob.getJobId());
 	}
 	
@@ -85,14 +83,15 @@ public class UserServiceImpl extends BaseService<User, Long> implements UserServ
         if(StringUtils.isEmpty(username)) {
             return null;
         }
-        return getUserDao().findByUsername(username);
+        //return getUserDao().findByUsername(username);
+        return userDao.findByUsername(username);
     }
 
     public User findByEmail(String email) {
         if(StringUtils.isEmpty(email)) {
             return null;
         }
-        return getUserDao().findByEmail(email);
+        return userDao.findByEmail(email);
     }
 
 
@@ -100,7 +99,7 @@ public class UserServiceImpl extends BaseService<User, Long> implements UserServ
         if(StringUtils.isEmpty(mobilePhoneNumber)) {
             return null;
         }
-        return getUserDao().findByMobilePhoneNumber(mobilePhoneNumber);
+        return userDao.findByMobilePhoneNumber(mobilePhoneNumber);
     }
 
 
@@ -268,7 +267,7 @@ public class UserServiceImpl extends BaseService<User, Long> implements UserServ
      * @return
      */
     public Page<UserOrganizationJob> findUserOrganizationJobOnNotExistsOrganizationOrJob(Pageable pageable) {
-        return getUserDao().findUserOrganizationJobOnNotExistsOrganizationOrJob(pageable);
+        return userDao.findUserOrganizationJobOnNotExistsOrganizationOrJob(pageable);
     }
 
     /**
@@ -277,7 +276,7 @@ public class UserServiceImpl extends BaseService<User, Long> implements UserServ
      * @return
      */
     public void deleteUserOrganizationJobOnNotExistsUser() {
-    	getUserDao().deleteUserOrganizationJobOnNotExistsUser();
+    	userDao.deleteUserOrganizationJobOnNotExistsUser();
     }
 
 }
