@@ -53,6 +53,8 @@
 		<httpclient.version>4.3.1</httpclient.version>
 
 		<jcaptcha.version>2.0-alpha-1</jcaptcha.version>
+		
+		<prettytime.version>3.2.3.Final</prettytime.version>
 
 		<asm.version>4.2</asm.version>
         <cglib.version>3.1</cglib.version>
@@ -310,6 +312,15 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		
+		<!-- 时间相关 -->
+        <!--日期美化-->
+        <dependency>
+            <groupId>org.ocpsoft.prettytime</groupId>
+            <artifactId>prettytime</artifactId>
+            <version>${prettytime.version}</version>
+        </dependency>
+        
 		
 		<!-- cglib asm 相关jar包-->
         <dependency>

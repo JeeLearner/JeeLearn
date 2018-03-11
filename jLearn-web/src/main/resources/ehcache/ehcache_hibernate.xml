@@ -46,49 +46,49 @@
            timeToLiveSeconds="3600"
            overflowToDisk="false">
     </cache>
-    <cache name="com.sishuok.es.sys.permission.entity.Permission"
+    <cache name="com.learn.common.sys.permission.entity.Permission"
            maxEntriesLocalHeap="2000"
            eternal="false"
            timeToIdleSeconds="3600"
            timeToLiveSeconds="3600"
            overflowToDisk="false">
     </cache>
-    <cache name="com.sishuok.es.sys.permission.entity.Role"
+    <cache name="com.learn.common.sys.permission.entity.Role"
            maxEntriesLocalHeap="2000"
            eternal="false"
            timeToIdleSeconds="3600"
            timeToLiveSeconds="3600"
            overflowToDisk="false">
     </cache>
-    <cache name="com.sishuok.es.sys.group.entity.Group"
+    <cache name="com.learn.common.sys.group.entity.Group"
            maxEntriesLocalHeap="2000"
            eternal="false"
            timeToIdleSeconds="3600"
            timeToLiveSeconds="3600"
            overflowToDisk="false">
     </cache>
-    <cache name="com.sishuok.es.sys.resource.entity.Resource"
+    <cache name="com.learn.common.sys.resource.entity.Resource"
            maxEntriesLocalHeap="2000"
            eternal="false"
            timeToIdleSeconds="3600"
            timeToLiveSeconds="3600"
            overflowToDisk="false">
     </cache>
-    <cache name="com.sishuok.es.sys.permission.entity.RoleResourcePermission"
+    <cache name="com.learn.common.sys.permission.entity.RoleResourcePermission"
            maxEntriesLocalHeap="2000"
            eternal="false"
            timeToIdleSeconds="3600"
            timeToLiveSeconds="3600"
            overflowToDisk="false">
     </cache>
-    <cache name="com.sishuok.es.sys.permission.entity.Role.resourcePermissions"
+    <cache name="com.learn.common.sys.permission.entity.Role.resourcePermissions"
            maxEntriesLocalHeap="2000"
            eternal="false"
            timeToIdleSeconds="3600"
            timeToLiveSeconds="3600"
            overflowToDisk="false">
     </cache>
-    <cache name="com.sishuok.es.sys.auth.entity.Auth"
+    <cache name="com.learn.common.sys.auth.entity.Auth"
            maxEntriesLocalHeap="2000"
            eternal="false"
            timeToIdleSeconds="3600"
@@ -96,14 +96,14 @@
            overflowToDisk="false">
     </cache>
 
-    <cache name="com.sishuok.es.sys.user.entity.UserOnline"
+    <cache name="com.learn.common.sys.user.entity.UserOnline"
            maxEntriesLocalHeap="2000"
            eternal="false"
            timeToIdleSeconds="3600"
            timeToLiveSeconds="3600"
            overflowToDisk="false">
     </cache>
-    <cache name="com.sishuok.es.sys.user.entity.UserLastOnline"
+    <cache name="com.learn.common.sys.user.entity.UserLastOnline"
            maxEntriesLocalHeap="2000"
            eternal="false"
            timeToIdleSeconds="3600"
