@@ -6,7 +6,7 @@ package com.learn.common.plugin.entity;
  * 为了简化开发 约定删除标识列名为deleted，如果想自定义删除的标识列名：
  * 1、使用注解元数据
  * 2、写一个 getColumn() 方法 返回列名
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月5日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

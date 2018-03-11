@@ -16,20 +16,23 @@ import com.learn.common.jdbc.jpa.entity.search.Searchable;
 /**
  * 抽象service层基类 提供一些简便方法
  * <p>泛型 ： M 表示实体类型；ID表示主键类型<p>
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月7日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd
  */
 public abstract class BaseService<M extends AbstractEntity, ID extends Serializable> {
 
-    protected BaseRepository<M, ID> baseRepository;
+    /*protected BaseRepository<M, ID> baseRepository;
 
     @Autowired
     public void setBaseRepository(BaseRepository<M, ID> baseRepository) {
         this.baseRepository = baseRepository;
-    }
-
+    }*/
+    
+    @Autowired
+    private BaseRepository<M, ID> baseRepository;
+    
     /**
      * 保存单个实体
      *

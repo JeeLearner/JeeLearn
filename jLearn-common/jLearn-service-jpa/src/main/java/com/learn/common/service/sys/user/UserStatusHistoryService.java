@@ -6,7 +6,7 @@ import com.learn.common.sys.user.entity.UserStatusHistory;
 
 /**
  * 用户状态历史信息 服务层
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月7日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

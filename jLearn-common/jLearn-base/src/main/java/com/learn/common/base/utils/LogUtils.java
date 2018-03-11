@@ -17,7 +17,7 @@ import java.util.Map;
 
 /**
  * 日志工具类  logback.xml
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月7日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

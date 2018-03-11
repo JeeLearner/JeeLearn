@@ -32,7 +32,7 @@ import java.util.Set;
  * <p/>
  * 3、如果另一方是可选的（如只选组织机构 或 只选工作职务） 那么默认0 使用0的目的是为了也让走索引
  * <p/>
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月9日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

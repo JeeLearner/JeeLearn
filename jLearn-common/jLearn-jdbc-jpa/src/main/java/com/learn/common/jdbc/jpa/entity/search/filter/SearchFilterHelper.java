@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 /**
  * 查询过滤器 辅助类
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月5日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

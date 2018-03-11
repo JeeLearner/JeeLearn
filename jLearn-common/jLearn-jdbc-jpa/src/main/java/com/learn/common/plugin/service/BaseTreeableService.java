@@ -56,7 +56,7 @@ public class BaseTreeableService<M extends BaseEntity<ID> & Treeable<ID>, ID ext
 	/**
 	 * 新增
 	 * 
-	 * @author lyd
+	 * @author JeeLearner
 	 * @date 2018年3月9日
 	 * @param m
 	 * @return
@@ -73,7 +73,7 @@ public class BaseTreeableService<M extends BaseEntity<ID> & Treeable<ID>, ID ext
 	/**
 	 * 删除
 	 * 
-	 * @author lyd
+	 * @author JeeLearner
 	 * @date 2018年3月9日
 	 * @param m
 	 */
@@ -91,7 +91,7 @@ public class BaseTreeableService<M extends BaseEntity<ID> & Treeable<ID>, ID ext
 	/**
 	 * 添加子节点
 	 * 
-	 * @author lyd
+	 * @author JeeLearner
 	 * @date 2018年3月9日
 	 * @param parent
 	 * @param child
@@ -106,7 +106,7 @@ public class BaseTreeableService<M extends BaseEntity<ID> & Treeable<ID>, ID ext
 	/**
 	 * 移动节点
 	 * <p>根节点不能移动<p>
-	 * @author lyd
+	 * @author JeeLearner
 	 * @date 2018年3月9日
 	 * @param source 源节点
 	 * @param target 目标节点
@@ -185,7 +185,7 @@ public class BaseTreeableService<M extends BaseEntity<ID> & Treeable<ID>, ID ext
 	
 	/**
 	 * 查看与name模糊匹配的名称
-	 * @author lyd
+	 * @author JeeLearner
 	 * @date 2018年3月9日
 	 * @param searchable
 	 * @param name
@@ -214,7 +214,7 @@ public class BaseTreeableService<M extends BaseEntity<ID> & Treeable<ID>, ID ext
 	
 	/**
 	 * 查询子子孙孙
-	 * @author lyd
+	 * @author JeeLearner
 	 * @date 2018年3月9日
 	 * @param parents
 	 * @param searchable
@@ -239,7 +239,7 @@ public class BaseTreeableService<M extends BaseEntity<ID> & Treeable<ID>, ID ext
 	
 	/**
 	 * 通过名称查找
-	 * @author lyd
+	 * @author JeeLearner
 	 * @date 2018年3月9日
 	 * @param searchable
 	 * @param excludeM
@@ -252,7 +252,7 @@ public class BaseTreeableService<M extends BaseEntity<ID> & Treeable<ID>, ID ext
 
 	/**
 	 * 查找根和一级节点
-	 * @author lyd
+	 * @author JeeLearner
 	 * @date 2018年3月9日
 	 * @param searchable
 	 * @return
@@ -278,7 +278,7 @@ public class BaseTreeableService<M extends BaseEntity<ID> & Treeable<ID>, ID ext
 	
     /**
      * 查询祖先IDs
-     * @author lyd
+     * @author JeeLearner
      * @date 2018年3月9日
      * @param currentIds
      * @return

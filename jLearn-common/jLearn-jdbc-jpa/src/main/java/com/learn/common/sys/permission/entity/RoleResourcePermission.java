@@ -18,7 +18,7 @@ import com.learn.common.jdbc.jpa.entity.BaseEntity;
 
 /**
  * 此处没有使用关联 是为了提高性能（后续会挨着查询资源和权限列表，因为有缓存，数据量也不是很大 所以性能不会差）
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月9日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

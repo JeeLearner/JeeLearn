@@ -2,7 +2,7 @@ package com.learn.common.exception.user;
 
 /**
  * 密码次数超限异常
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月7日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

@@ -2,7 +2,7 @@ package com.learn.common.base.enums;
 
 /**
  * 枚举    可用/不可用
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月5日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

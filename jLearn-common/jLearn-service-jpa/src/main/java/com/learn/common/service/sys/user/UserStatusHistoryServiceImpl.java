@@ -31,7 +31,7 @@ public class UserStatusHistoryServiceImpl extends BaseService<UserStatusHistory,
 	public UserStatusHistory findLastHistory(User user) {
 		Searchable searchable = Searchable.newSearchable().addSearchParam("user_eq", user)
 				.addSort(Sort.Direction.DESC, "opDate").setPage(0, 1);
-		Page<UserStatusHistory> page = baseRepository.findAll(searchable);
+		Page<UserStatusHistory> page = findAll(searchable);
 		if (page.hasContent()) {
 			return page.getContent().get(0);
 		}

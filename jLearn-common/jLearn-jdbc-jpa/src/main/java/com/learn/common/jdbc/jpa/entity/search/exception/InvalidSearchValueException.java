@@ -2,7 +2,7 @@ package com.learn.common.jdbc.jpa.entity.search.exception;
 
 /**
  * 搜索结果值异常类
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月5日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

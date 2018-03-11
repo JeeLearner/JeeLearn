@@ -5,7 +5,7 @@ import java.lang.annotation.*;
 /**
  * 开启查询缓存
  *
- * @author lyd
+ * @author JeeLearner
  */
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)

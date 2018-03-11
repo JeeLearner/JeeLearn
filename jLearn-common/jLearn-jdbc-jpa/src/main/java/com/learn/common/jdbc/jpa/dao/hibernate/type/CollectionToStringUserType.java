@@ -23,7 +23,7 @@ import java.util.Properties;
  */
 /**
  * 将List转换为指定分隔符分隔的字符串存储 List的元素类型只支持常见的数据类型 可参考{@link org.apache.commons.beanutils.ConvertUtilsBean}
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月9日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

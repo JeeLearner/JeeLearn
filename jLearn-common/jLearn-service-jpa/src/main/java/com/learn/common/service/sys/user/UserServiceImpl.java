@@ -24,6 +24,7 @@ import com.learn.common.jdbc.jpa.entity.search.SearchOperator;
 import com.learn.common.jdbc.jpa.entity.search.Searchable;
 import com.learn.common.jdbc.jpa.service.BaseService;
 import com.learn.common.service.support.PasswordService;
+import com.learn.common.sys.group.dao.GroupRelationDao;
 import com.learn.common.sys.user.dao.UserDao;
 import com.learn.common.sys.user.entity.User;
 import com.learn.common.sys.user.entity.UserOrganizationJob;
@@ -32,6 +33,9 @@ import com.learn.common.sys.user.entity.UserStatus;
 @Service
 public class UserServiceImpl extends BaseService<User, Long> implements UserService {
 
+	/*private UserDao getUserDao() {
+        return (UserDao) baseRepository;
+    }*/
 	@Autowired
 	private UserDao userDao;
 
@@ -119,7 +123,7 @@ public class UserServiceImpl extends BaseService<User, Long> implements UserServ
     
     /**
      * 登录逻辑
-     * @author lyd
+     * @author JeeLearner
      * @date 2018年3月7日
      * @param username
      * @param password

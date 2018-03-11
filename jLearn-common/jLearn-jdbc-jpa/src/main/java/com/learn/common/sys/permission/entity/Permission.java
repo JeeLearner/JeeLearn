@@ -11,7 +11,7 @@ import com.learn.common.jdbc.jpa.entity.BaseEntity;
 
 /**
  * 权限实体类
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月9日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

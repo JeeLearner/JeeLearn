@@ -1,5 +1,7 @@
 package com.learn.web.controller.sys.organization;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,12 +19,14 @@ public class OrganizationController extends BaseTreeableController<Organization,
 	@Autowired
 	private OrganizationService organizationService;
 	
-	/*@RequestMapping("")
+	//TODO 测试
+	@RequestMapping("")
 	@ResponseBody
-	public String testService(){
+	public int testService(){
 		//User user = organizationService.filterForCanShow(, organizationJobIds);;
-		return user.getEmail();
+		List<Organization> list = organizationService.findAll();
+		return list.size();
 		
-	}*/
+	}
 	
 }

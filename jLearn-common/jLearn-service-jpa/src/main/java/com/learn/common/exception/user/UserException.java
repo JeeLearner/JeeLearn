@@ -4,7 +4,7 @@ import com.learn.common.base.exception.BaseException;
 
 /**
  * 用户异常类
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月7日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

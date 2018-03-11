@@ -3,6 +3,7 @@ package com.learn.common.service.sys.permission;
 import java.util.List;
 import java.util.Set;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.google.common.collect.Sets;
@@ -13,14 +14,13 @@ import com.learn.common.sys.permission.entity.RoleResourcePermission;
 
 @Service
 public class RoleServiceImpl extends BaseService<Role, Long> implements RoleService {
-
-	public RoleDao getRoleDao() {
-        return (RoleDao) baseRepository;
-    }
+	
+	@Autowired
+	private RoleDao roleDao;
 	
 	/**
 	 * update
-	 * @author lyd
+	 * @author JeeLearner
 	 * @date 2018年3月9日
 	 * @param role
 	 * @return
@@ -45,7 +45,7 @@ public class RoleServiceImpl extends BaseService<Role, Long> implements RoleServ
 	
 	/**
 	 * 获取可用的角色列表
-	 * @author lyd
+	 * @author JeeLearner
 	 * @date 2018年3月9日
 	 * @param roleIds
 	 * @return
@@ -64,7 +64,7 @@ public class RoleServiceImpl extends BaseService<Role, Long> implements RoleServ
     }
 
 	private RoleResourcePermission findRoleResourcePermission(RoleResourcePermission roleResourcePermission) {
-        return getRoleDao().findRoleResourcePermission(
+        return roleDao.findRoleResourcePermission(
                 roleResourcePermission.getRole(), roleResourcePermission.getResourceId());
     }
 	

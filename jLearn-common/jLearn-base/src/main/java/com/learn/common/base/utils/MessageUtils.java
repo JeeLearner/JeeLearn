@@ -4,7 +4,7 @@ import org.springframework.context.MessageSource;
 
 /**
  * 消息工具类
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月7日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

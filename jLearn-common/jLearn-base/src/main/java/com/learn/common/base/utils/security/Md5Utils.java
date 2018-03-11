@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * 加密工具类
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月7日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd
@@ -18,7 +18,7 @@ public class Md5Utils {
 	
 	/**
 	 * 进行加密
-	 * @author lyd
+	 * @author JeeLearner
 	 * @date 2018年3月7日
 	 * @param s
 	 * @return

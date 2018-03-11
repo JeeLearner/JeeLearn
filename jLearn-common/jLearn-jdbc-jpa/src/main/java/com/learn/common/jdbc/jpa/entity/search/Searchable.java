@@ -13,7 +13,7 @@ import java.util.Map;
 
 /**
  * 查询条件接口
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月5日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

@@ -13,7 +13,7 @@ public class OrganizationServiceImpl extends BaseTreeableService<Organization, L
 
 	/**
 	 * 过滤仅获取可显示的数据
-	 * @author lyd
+	 * @author JeeLearner
 	 * @date 2018年3月9日
 	 * @param organizationIds
 	 * @param organizationJobIds

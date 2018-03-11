@@ -22,7 +22,7 @@ import java.util.Map;
 
 /**
  * 查询条件（包括分页和排序）
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月5日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

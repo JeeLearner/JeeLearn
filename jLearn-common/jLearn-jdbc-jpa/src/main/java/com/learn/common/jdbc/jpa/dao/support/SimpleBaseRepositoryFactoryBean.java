@@ -23,7 +23,7 @@ import com.learn.common.jdbc.jpa.dao.support.annotation.SearchableQuery;
  * 基础Repostory简单实现 factory bean 请参考 spring-data-jpa-reference [1.4.2. Adding
  * custom behaviour to all repositories]
  * 
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月5日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

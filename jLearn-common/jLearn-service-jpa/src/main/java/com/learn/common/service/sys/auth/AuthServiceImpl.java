@@ -23,13 +23,12 @@ public class AuthServiceImpl extends BaseService<Auth, Long> implements AuthServ
     @Autowired
     private GroupService groupService;
 
-    private AuthDao getAuthDao() {
-        return (AuthDao) baseRepository;
-    }
+    @Autowired
+    private AuthDao authDao;
 
     /**
      * 为用户添加角色
-     * @author lyd
+     * @author JeeLearner
      * @date 2018年3月9日
      * @param userIds
      * @param m
@@ -48,7 +47,7 @@ public class AuthServiceImpl extends BaseService<Auth, Long> implements AuthServ
                 continue;
             }
 
-            Auth auth = getAuthDao().findByUserId(userId);
+            Auth auth = authDao.findByUserId(userId);
             if (auth != null) {
                 auth.addRoleIds(m.getRoleIds());
                 continue;
@@ -63,7 +62,7 @@ public class AuthServiceImpl extends BaseService<Auth, Long> implements AuthServ
 
     /**
      * 为组添加角色
-     * @author lyd
+     * @author JeeLearner
      * @date 2018年3月9日
      * @param groupIds
      * @param m
@@ -80,7 +79,7 @@ public class AuthServiceImpl extends BaseService<Auth, Long> implements AuthServ
                 continue;
             }
 
-            Auth auth = getAuthDao().findByGroupId(groupId);
+            Auth auth = authDao.findByGroupId(groupId);
             if (auth != null) {
                 auth.addRoleIds(m.getRoleIds());
                 continue;
@@ -95,7 +94,7 @@ public class AuthServiceImpl extends BaseService<Auth, Long> implements AuthServ
 
     /**
      * 批量为组织机构、工作职位添加角色授权
-     * @author lyd
+     * @author JeeLearner
      * @date 2018年3月9日
      * @param organizationIds
      * @param jobIds
@@ -146,7 +145,7 @@ public class AuthServiceImpl extends BaseService<Auth, Long> implements AuthServ
      */
     @Override
     public Set<Long> findRoleIds(Long userId, Set<Long> groupIds, Set<Long> organizationIds, Set<Long> jobIds, Set<Long[]> organizationJobIds) {
-        return getAuthDao().findRoleIds(userId, groupIds, organizationIds, jobIds, organizationJobIds);
+        return authDao.findRoleIds(userId, groupIds, organizationIds, jobIds, organizationJobIds);
     }
     
     
@@ -158,7 +157,7 @@ public class AuthServiceImpl extends BaseService<Auth, Long> implements AuthServ
             jobId = 0L;
         }
 
-        Auth auth = getAuthDao().findByOrganizationIdAndJobId(organizationId, jobId);
+        Auth auth = authDao.findByOrganizationIdAndJobId(organizationId, jobId);
         if (auth != null) {
             auth.addRoleIds(m.getRoleIds());
             return;

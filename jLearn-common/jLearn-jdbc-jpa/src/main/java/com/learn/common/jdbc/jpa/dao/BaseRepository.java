@@ -19,7 +19,7 @@ import com.learn.common.jdbc.jpa.entity.search.Searchable;
  * factory-class="com.learn.common.jdbc.jpa.dao.support.SimpleBaseRepositoryFactoryBean"
  * <p/>
  * <p>泛型 ： M 表示实体类型；ID表示主键类型
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月5日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

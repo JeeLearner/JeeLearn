@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 /**
  * 实体实现该接口表示想要实现树结构
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月6日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

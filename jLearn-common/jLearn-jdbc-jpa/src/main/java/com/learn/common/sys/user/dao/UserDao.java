@@ -12,7 +12,7 @@ import com.learn.common.sys.user.entity.UserOrganizationJob;
 
 /**
  * 用户数据层接口
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月6日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

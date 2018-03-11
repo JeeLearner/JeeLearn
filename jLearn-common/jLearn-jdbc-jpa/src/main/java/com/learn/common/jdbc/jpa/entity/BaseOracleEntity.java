@@ -11,7 +11,7 @@ import javax.persistence.MappedSuperclass;
  * 抽象实体基类，提供统一的ID，和相关的基本功能方法
  *   如果是如mysql这种自动生成主键的，请参考{@link BaseEntity}
  *   子类只需要在类头上加 @SequenceGenerator(name="seq", sequenceName="你的sequence名字")
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月6日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

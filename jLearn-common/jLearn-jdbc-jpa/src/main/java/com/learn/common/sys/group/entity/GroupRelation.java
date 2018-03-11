@@ -10,7 +10,7 @@ import com.learn.common.jdbc.jpa.entity.BaseEntity;
  * 分组与 用户/组织机构关系表
  * <p/>
  * 将用户/组织机构放一张表目的是提高查询性能
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月9日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

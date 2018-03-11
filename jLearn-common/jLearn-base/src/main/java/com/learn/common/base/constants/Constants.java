@@ -2,7 +2,7 @@ package com.learn.common.base.constants;
 
 /**
  * 系统常量
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月8日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

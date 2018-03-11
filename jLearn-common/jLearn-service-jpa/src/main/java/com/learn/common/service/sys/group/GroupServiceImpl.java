@@ -26,10 +26,6 @@ public class GroupServiceImpl extends BaseService<Group, Long> implements GroupS
 	@Autowired
 	private GroupDao groupDao;
 
-    private GroupDao getGroupDao() {
-        return (GroupDao) baseRepository;
-    }
-
     @Override
     public Set<Map<String, Object>> findIdAndNames(Searchable searchable, String groupName) {
     	
@@ -61,7 +57,7 @@ public class GroupServiceImpl extends BaseService<Group, Long> implements GroupS
     @Override
     public Set<Long> findShowGroupIds(Long userId, Set<Long> organizationIds) {
         Set<Long> groupIds = Sets.newHashSet();
-        groupIds.addAll(getGroupDao().findDefaultGroupIds());
+        groupIds.addAll(groupDao.findDefaultGroupIds());
         groupIds.addAll(groupRelationService.findGroupIds(userId, organizationIds));
 
 

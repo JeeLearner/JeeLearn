@@ -7,7 +7,7 @@ import org.springframework.data.domain.Persistable;
 
 /**
  * 抽象实体基类，如果主键是数据库端自动生成 请使用{@link BaseEntity}，如果是Oracle 请使用{@link BaseOracleEntity}
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月6日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

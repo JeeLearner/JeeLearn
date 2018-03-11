@@ -5,7 +5,7 @@ import com.learn.common.sys.permission.entity.Permission;
 
 /**
  * 权限数据层
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月9日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

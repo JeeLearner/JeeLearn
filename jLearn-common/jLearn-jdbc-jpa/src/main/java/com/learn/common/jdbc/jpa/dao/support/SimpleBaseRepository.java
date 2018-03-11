@@ -44,7 +44,7 @@ import static org.springframework.data.jpa.repository.query.QueryUtils.toOrders;
 /**
  * 抽象基础Custom Repository 实现
  * 
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月5日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

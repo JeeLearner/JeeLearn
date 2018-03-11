@@ -18,7 +18,7 @@ import net.sf.ehcache.Element;
 
 /**
  * 用户密码服务
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月7日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd
@@ -45,7 +45,7 @@ public class PasswordService {
     
     /**
      * 用户密码验证
-     * @author lyd
+     * @author JeeLearner
      * @date 2018年3月7日
      * @param user
      * @param password

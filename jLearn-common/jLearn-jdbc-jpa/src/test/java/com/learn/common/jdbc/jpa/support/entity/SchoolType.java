@@ -2,7 +2,7 @@ package com.learn.common.jdbc.jpa.support.entity;
 
 /**
  * 学校类型
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月6日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

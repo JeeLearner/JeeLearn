@@ -3,6 +3,7 @@ package com.learn.common.service.sys.group;
 import java.util.Set;
 
 import org.apache.commons.lang3.ArrayUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.google.common.collect.Sets;
@@ -13,9 +14,8 @@ import com.learn.common.sys.group.entity.GroupRelation;
 @Service
 public class GroupRelationServiceImpl extends BaseService<GroupRelation, Long> implements GroupRelationService {
 
-	private GroupRelationDao getGroupRelationDao() {
-        return (GroupRelationDao) baseRepository;
-    }
+	@Autowired
+	private GroupRelationDao groupRelationDao;
 
 	@Override
     public void appendRelation(Long groupId, Long[] organizationIds) {
@@ -26,7 +26,7 @@ public class GroupRelationServiceImpl extends BaseService<GroupRelation, Long> i
             if (organizationId == null) {
                 continue;
             }
-            GroupRelation r = getGroupRelationDao().findByGroupIdAndOrganizationId(groupId, organizationId);
+            GroupRelation r = groupRelationDao.findByGroupIdAndOrganizationId(groupId, organizationId);
             if (r == null) {
                 r = new GroupRelation();
                 r.setGroupId(groupId);
@@ -46,7 +46,7 @@ public class GroupRelationServiceImpl extends BaseService<GroupRelation, Long> i
                 if (userId == null) {
                     continue;
                 }
-                GroupRelation r = getGroupRelationDao().findByGroupIdAndUserId(groupId, userId);
+                GroupRelation r = groupRelationDao.findByGroupIdAndUserId(groupId, userId);
                 if (r == null) {
                     r = new GroupRelation();
                     r.setGroupId(groupId);
@@ -61,11 +61,11 @@ public class GroupRelationServiceImpl extends BaseService<GroupRelation, Long> i
                 Long startUserId = startUserIds[i];
                 Long endUserId = endUserIds[i];
                 //范围查 如果在指定范围内 就没必要再新增一个 如当前是[10,20] 如果数据库有[9,21]
-                GroupRelation r = getGroupRelationDao().findByGroupIdAndStartUserIdLessThanEqualAndEndUserIdGreaterThanEqual(groupId, startUserId, endUserId);
+                GroupRelation r = groupRelationDao.findByGroupIdAndStartUserIdLessThanEqualAndEndUserIdGreaterThanEqual(groupId, startUserId, endUserId);
 
                 if (r == null) {
                     //删除范围内的
-                	getGroupRelationDao().deleteInRange(startUserId, endUserId);
+                	groupRelationDao.deleteInRange(startUserId, endUserId);
                     r = new GroupRelation();
                     r.setGroupId(groupId);
                     r.setStartUserId(startUserId);
@@ -80,9 +80,9 @@ public class GroupRelationServiceImpl extends BaseService<GroupRelation, Long> i
 	@Override
     public Set<Long> findGroupIds(Long userId, Set<Long> organizationIds) {
         if (organizationIds.isEmpty()) {
-            return Sets.newHashSet(getGroupRelationDao().findGroupIds(userId));
+            return Sets.newHashSet(groupRelationDao.findGroupIds(userId));
         }
 
-        return Sets.newHashSet(getGroupRelationDao().findGroupIds(userId, organizationIds));
+        return Sets.newHashSet(groupRelationDao.findGroupIds(userId, organizationIds));
     }
 }

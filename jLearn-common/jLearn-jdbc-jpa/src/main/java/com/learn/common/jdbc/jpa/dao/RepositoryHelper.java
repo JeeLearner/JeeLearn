@@ -19,7 +19,7 @@ import java.util.List;
 
 /**
  * 仓库辅助类
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月5日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

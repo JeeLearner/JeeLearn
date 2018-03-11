@@ -4,7 +4,7 @@ import com.learn.common.jdbc.jpa.entity.search.SearchOperator;
 
 /**
  * 搜索操作符异常类
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月5日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

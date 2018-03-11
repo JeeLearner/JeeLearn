@@ -11,7 +11,7 @@ import com.learn.common.base.utils.LogUtils;
 
 /**
  * 用户日志工具类
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月7日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

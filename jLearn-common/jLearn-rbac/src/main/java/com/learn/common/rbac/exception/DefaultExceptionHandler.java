@@ -15,7 +15,7 @@ import com.learn.common.rbac.exception.entity.ExceptionResponse;
  * 没有权限 异常
  * <p/>
  * 后续根据不同的需求定制即可
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月8日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd

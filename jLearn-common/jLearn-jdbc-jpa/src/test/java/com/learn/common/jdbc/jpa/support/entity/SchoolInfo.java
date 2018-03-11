@@ -12,7 +12,7 @@ import com.learn.common.jdbc.jpa.entity.BaseEntity;
 
 /**
  * 学校信息
- * @author lyd
+ * @author JeeLearner
  * @date 2018年3月6日
  * @version 1.0
  * @CSDN http://blog.csdn.net/it_lyd
