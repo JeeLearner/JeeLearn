@@ -13,4 +13,9 @@ public interface OrganizationService {
 	public void filterForCanShow(Set<Long> organizationIds, Set<Long[]> organizationJobIds);
 	
 	public List<Organization> findAll();
+	
+	/*
+	 * 找组织机构的祖先
+	 */
+	public Set<Long> findAncestorIds(Iterable<Long> currentIds);
 }

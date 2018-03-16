@@ -38,11 +38,12 @@ public class UserController extends BaseCRUDController<User, Long> {
     }
 
 	@RequestMapping("a")
-	@ResponseBody
 	public String testService(){
 		//User user = userService.findByUsername("showcase");
-		User user = userService.findByEmail("showcase@sishuok.com");
-		return user.getUsername();
+		//User user = userService.findByUsername("show");
+		//User user = userService.findByEmail("showcase@sishuok.com");
+		
+		return "front/login";
 		
 	}
 }

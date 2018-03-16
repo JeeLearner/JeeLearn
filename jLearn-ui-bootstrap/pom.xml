@@ -8,7 +8,7 @@
   <artifactId>jLearn-ui-bootstrap</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-  <name>ui</name>
+  <name>jLearn-ui-bootstrap</name>
   <dependencies>
   	<dependency>
   		<groupId>com.learn</groupId>

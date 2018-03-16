@@ -13,7 +13,7 @@
     <tag>
         <description>Renders an HTML 'input' tag with type 'text' using the bound value.</description>
         <name>input</name>
-        <tag-class>com.sishuok.es.common.web.form.InputTag</tag-class>
+        <tag-class>com.learn.web.ui.taglib.form.InputTag</tag-class>
         <body-content>empty</body-content>
         <attribute>
             <description>Path to property for data binding</description>
@@ -213,7 +213,7 @@
     <tag>
         <description>Renders an HTML 'input' tag with type 'hidden' using the bound value.</description>
         <name>hidden</name>
-        <tag-class>com.sishuok.es.common.web.form.HiddenInputTag</tag-class>
+        <tag-class>com.learn.web.ui.taglib.form.HiddenInputTag</tag-class>
         <body-content>empty</body-content>
         <attribute>
             <description>Path to property for data binding</description>
@@ -238,7 +238,7 @@
     <tag>
         <description>Renders an HTML 'select' element. Supports databinding to the selected option.</description>
         <name>select</name>
-        <tag-class>com.sishuok.es.common.web.form.SelectTag</tag-class>
+        <tag-class>com.learn.web.ui.taglib.form.SelectTag</tag-class>
         <body-content>JSP</body-content>
         <attribute>
             <description>Path to property for data binding</description>
@@ -429,7 +429,7 @@
     <tag>
         <description>Renders a single HTML 'option'. Sets 'selected' as appropriate based on bound value.</description>
         <name>option</name>
-        <tag-class>com.sishuok.es.common.web.form.OptionTag</tag-class>
+        <tag-class>com.learn.web.ui.taglib.form.OptionTag</tag-class>
         <body-content>JSP</body-content>
         <variable>
             <description>The actual value bound to the 'value' attribute</description>
@@ -586,7 +586,7 @@
         <description>Renders a list of HTML 'option' tags. Sets 'selected' as appropriate based on bound value.
         </description>
         <name>options</name>
-        <tag-class>com.sishuok.es.common.web.form.OptionsTag</tag-class>
+        <tag-class>com.learn.web.ui.taglib.form.OptionsTag</tag-class>
         <body-content>empty</body-content>
         <attribute>
             <description>HTML Standard Attribute</description>
@@ -738,7 +738,7 @@
     <tag>
         <description>Renders an HTML 'input' tag with type 'radio'.</description>
         <name>radiobutton</name>
-        <tag-class>com.sishuok.es.common.web.form.RadioButtonTag</tag-class>
+        <tag-class>com.learn.web.ui.taglib.form.RadioButtonTag</tag-class>
         <body-content>empty</body-content>
         <attribute>
             <description>Path to property for data binding</description>
@@ -911,7 +911,7 @@
     <tag>
         <description>Renders multiple HTML 'input' tags with type 'radio'.</description>
         <name>radiobuttons</name>
-        <tag-class>com.sishuok.es.common.web.form.RadioButtonsTag</tag-class>
+        <tag-class>com.learn.web.ui.taglib.form.RadioButtonsTag</tag-class>
         <body-content>empty</body-content>
         <attribute>
             <description>Path to property for data binding</description>
@@ -1110,7 +1110,7 @@
     <tag>
         <description>Renders an HTML 'input' tag with type 'checkbox'.</description>
         <name>checkbox</name>
-        <tag-class>com.sishuok.es.common.web.form.CheckboxTag</tag-class>
+        <tag-class>com.learn.web.ui.taglib.form.CheckboxTag</tag-class>
         <body-content>empty</body-content>
         <attribute>
             <description>Path to property for data binding</description>
@@ -1283,7 +1283,7 @@
     <tag>
         <description>Renders multiple HTML 'input' tags with type 'checkbox'.</description>
         <name>checkboxes</name>
-        <tag-class>com.sishuok.es.common.web.form.CheckboxesTag</tag-class>
+        <tag-class>com.learn.web.ui.taglib.form.CheckboxesTag</tag-class>
         <body-content>empty</body-content>
         <attribute>
             <description>Path to property for data binding</description>
@@ -1481,7 +1481,7 @@
     <tag>
         <description>Renders an HTML 'textarea'.</description>
         <name>textarea</name>
-        <tag-class>com.sishuok.es.common.web.form.TextareaTag</tag-class>
+        <tag-class>com.learn.web.ui.taglib.form.TextareaTag</tag-class>
         <body-content>empty</body-content>
         <attribute>
             <description>Path to property for data binding</description>
@@ -1668,7 +1668,7 @@
     <tag>
         <description>Renders a form field label in an HTML 'label' tag.</description>
         <name>label</name>
-        <tag-class>com.sishuok.es.common.web.form.LabelTag</tag-class>
+        <tag-class>com.learn.web.ui.taglib.form.LabelTag</tag-class>
         <body-content>JSP</body-content>
         <attribute>
             <description>Path to errors object for data binding</description>

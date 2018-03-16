@@ -3,4 +3,5 @@ jLearn-jdbc-jpa
 	
 jLearn-service-jpa
 	com.learn.common.service.sys.organization.OrganizationServiceImpl.java
+	com.learn.common.service.sys.resource.ResourceServiceImpl.java
 	

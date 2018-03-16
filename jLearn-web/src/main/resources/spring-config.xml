@@ -155,6 +155,19 @@
         <aop:advisor id="txAdvisor" advice-ref="txAdvice" pointcut-ref="txPointcut"/>
     </aop:config>
 
+	<!-- 国际化的消息资源文件（本系统中主要用于显示/错误消息定制） -->
+    <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <property name="basenames">
+            <list>
+                <!-- 在web环境中一定要定位到classpath 否则默认到当前web应用下找  -->
+                <value>classpath:message/messages</value>
+                <value>classpath:message/ValidationMessages</value>
+            </list>
+        </property>
+        <property name="useCodeAsDefaultMessage" value="false"/>
+        <property name="defaultEncoding" value="UTF-8"/>
+        <property name="cacheSeconds" value="60"/>
+    </bean>
 
     <!-- 以下 validator  ConversionService 在使用 mvc:annotation-driven 会 自动注册-->
     <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
@@ -185,6 +198,8 @@
         <property name="arguments" ref="entityManagerFactory"/>
     </bean>
 
-    <import resource="classpath:spring-config-cache.xml"/>
+    <import resource="spring-config-cache.xml"/>
+    <import resource="spring-config-shiro.xml"/>
+    <import resource="spring-config-task.xml"/>
 
 </beans>
