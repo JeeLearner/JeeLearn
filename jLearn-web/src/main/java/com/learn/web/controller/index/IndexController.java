@@ -1,4 +1,4 @@
-package com.learn.web.controller.front;
+package com.learn.web.controller.index;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
