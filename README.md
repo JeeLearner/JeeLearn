@@ -12,7 +12,7 @@
 Maven依赖关系：https://github.com/JeeLearner/JeeLearn/tree/master/doc/JeeLearn-Maven依赖关系.jpg
 
 #### 技术分析
-###### 后台
+##### 后台
 * 基础框架
     *  IOC容器 Spring 4.3.8.RELEASE
     *  WEB框架 SpringMVC
@@ -36,7 +36,7 @@ Maven依赖关系：https://github.com/JeeLearner/JeeLearn/tree/master/doc/JeeLe
 * 其它
     *  日期美化 prettytime 3.2.3.Final
  
-#####前端
+##### 前端
 * 界面框架 &nbsp;&nbsp;&nbsp;&nbsp;  jquery-ui-bootstrap
 * 日期时间选择器 &nbsp;&nbsp;&nbsp;&nbsp; bootstrap-datetimepicker
 * 日历插件 &nbsp;&nbsp;&nbsp;&nbsp; fullcalendar
@@ -49,7 +49,7 @@ Maven依赖关系：https://github.com/JeeLearner/JeeLearn/tree/master/doc/JeeLe
 * 文件上传 &nbsp;&nbsp;&nbsp;&nbsp; jquery-fileupload
 
 #### 核心功能
-######基础建设
+##### 基础建设
 * 系统登录
 
 
