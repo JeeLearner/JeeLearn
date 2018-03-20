@@ -17,6 +17,13 @@ import com.learn.common.base.constants.Constants;
 import com.learn.common.service.sys.user.UserStatusHistoryService;
 import com.learn.common.sys.user.entity.User;
 
+/**
+ * 登录控制器
+ * @author JeeLearner
+ * @date 2018年3月19日
+ * @version 1.0
+ * @CSDN http://blog.csdn.net/it_lyd
+ */
 @Controller
 public class LoginFormController {
 

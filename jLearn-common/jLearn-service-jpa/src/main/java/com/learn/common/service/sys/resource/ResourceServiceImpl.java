@@ -122,13 +122,14 @@ public class ResourceServiceImpl extends BaseTreeableService<Resource, Long> imp
 		return p1.implies(p2) || p2.implies(p1);
 	}
 
+	@SuppressWarnings("unchecked")
 	public static List<Menu> convertToMenus(List<Resource> resources) {
 
 		if (resources.size() == 0) {
 			return Collections.EMPTY_LIST;
 		}
 
-		Resource remove = resources.remove(resources.size() - 1);
+		//Resource remove = resources.remove(resources.size() - 1);
 		Menu root = convertToMenu(resources.remove(resources.size() - 1));
 
 		recursiveMenu(root, resources);

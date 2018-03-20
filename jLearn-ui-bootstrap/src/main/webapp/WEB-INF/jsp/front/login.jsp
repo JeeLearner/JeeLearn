@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
-<%@include file="/WEB-INF/jsp/commom/taglibs.jspf"%>
+<%@include file="/WEB-INF/jsp/common/taglibs.jspf"%>
 <es:contentHeader title="用户登录" index="true" />
 <div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">

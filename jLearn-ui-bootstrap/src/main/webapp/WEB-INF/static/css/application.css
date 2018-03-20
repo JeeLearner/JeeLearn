@@ -287,7 +287,8 @@ html, body {
 
 .index-panel {
     margin:0 auto;
-    width:	1020px;
+    /* width:	1020px; */
+    width: 90%;
     height:99.7%;
     border: 1px solid #eee;
     background: #fff;
