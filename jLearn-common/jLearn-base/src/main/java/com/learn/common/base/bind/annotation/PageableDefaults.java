@@ -4,8 +4,10 @@ import java.lang.annotation.*;
 
 /**
  * <p>默认的分页数据，先从参数找，参数找不到从方法上找</p>
- *
- * @author Zhang Kaitao
+ * @author JeeLearner
+ * @date 2018年3月21日
+ * @version 1.0
+ * @CSDN http://blog.csdn.net/it_lyd
  */
 @Target({ElementType.METHOD, ElementType.PARAMETER})
 @Retention(RetentionPolicy.RUNTIME)

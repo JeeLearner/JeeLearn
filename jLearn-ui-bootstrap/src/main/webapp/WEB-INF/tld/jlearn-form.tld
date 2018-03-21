@@ -8,7 +8,7 @@
     <description>Spring Framework JSP Form Tag Library</description>
     <tlib-version>3.0</tlib-version>
     <short-name>esform</short-name>
-    <uri>http://www.sishuok.com/tags/es-form</uri>
+    <!-- <uri>http://www.sishuok.com/tags/es-form</uri> -->
 
     <tag>
         <description>Renders an HTML 'input' tag with type 'text' using the bound value.</description>

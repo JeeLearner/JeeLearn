@@ -78,6 +78,7 @@ public class ResourceServiceImpl extends BaseTreeableService<Resource, Long> imp
 
 		List<Resource> resources = findAllWithSort(searchable);
 
+		//  [monitor:*:*, maintain:*:*, showcase:*:*, sys:*:*]
 		Set<String> userPermissions = userAuthService.findStringPermissions(user);
 
 		Iterator<Resource> iterator = resources.iterator();

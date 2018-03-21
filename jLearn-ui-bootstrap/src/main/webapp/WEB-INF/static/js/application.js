@@ -398,7 +398,7 @@ $.app = {
 
     waiting : function(message, isSmall) {
         if(!message) {
-            message = "装载中...";
+            message = "加载中...";
         }
 
         message = '<img src="' + ctx + '/static/images/loading.gif" '+ (isSmall ? "width='20px'" : "") +'/> ' + message;
