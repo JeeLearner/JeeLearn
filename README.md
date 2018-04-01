@@ -52,10 +52,20 @@ Maven依赖关系：https://github.com/JeeLearner/JeeLearn/tree/master/doc/JeeLe
 ##### 基础建设
 * 系统登录
 
+##### 已完成
+* 系统登录
+* 系统监控
+* 缓存实现
+
+##### 未完成
+* 系统监控-拦截器：限制ip
+
+
 
 #### 项目分析
 优点：
 
 缺点：
 * 授权是在sys_auth表进行的，这样处理不太好，后续最好改为OAuth2请求授权。
+* 缓存的清空时机可优化
 
