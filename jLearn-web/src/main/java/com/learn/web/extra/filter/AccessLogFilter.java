@@ -11,6 +11,9 @@ import com.learn.common.base.utils.LogUtils;
 
 /**
  * 记录访问日志 过滤器
+ * 通过web.xml配置白名单和黑名单
+ *    黑名单：不会走此过滤器
+ *    白名单：走此过滤器
  * @author JeeLearner
  * @date 2018年3月31日
  * @version 1.0

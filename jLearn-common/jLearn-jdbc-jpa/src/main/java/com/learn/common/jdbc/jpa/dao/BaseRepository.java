@@ -7,6 +7,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.support.SimpleJpaRepository;
 import org.springframework.data.repository.NoRepositoryBean;
 
 import com.learn.common.jdbc.jpa.entity.search.Searchable;
@@ -72,5 +73,5 @@ public interface BaseRepository<M, ID extends Serializable> extends JpaRepositor
      * @return
      */
     public long count(Searchable searchable);
-
+    
 }
