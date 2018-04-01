@@ -10,4 +10,6 @@ public interface RoleService {
 	 * 获取可用的角色列表
 	 */
     public Set<Role> findShowRoles(Set<Long> roleIds);
+    
+    public Role findOne(Long roleId);
 }

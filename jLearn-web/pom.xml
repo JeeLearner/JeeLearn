@@ -10,12 +10,33 @@
   <artifactId>jLearn-web</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>web</name>
+  
+  <properties>
+  	<apache.poi.version>3.9</apache.poi.version>
+  </properties>
+  
   <dependencies>
   	<dependency>
   		<groupId>com.learn</groupId>
   		<artifactId>jLearn-modules</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
+  	
+  	<dependency>
+		<groupId>org.apache.poi</groupId>
+		<artifactId>poi-ooxml</artifactId>
+		<version>${apache.poi.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.poi</groupId>
+		<artifactId>poi-ooxml-schemas</artifactId>
+		<version>${apache.poi.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.apache.poi</groupId>
+		<artifactId>poi-scratchpad</artifactId>
+		<version>${apache.poi.version}</version>
+	</dependency>
   </dependencies>
 
 
@@ -26,13 +47,15 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <db.name>jeelearn</db.name>
+                <db.name>es</db.name>
                 <connection.driver_class>com.mysql.jdbc.Driver</connection.driver_class>
                 <connection.admin.url>
-                    <![CDATA[jdbc:mysql://localhost:3306?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8]]>
+                    <!-- <![CDATA[jdbc:mysql://localhost:3306?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8]]> -->
+                    <![CDATA[jdbc:mysql://116.196.73.58:3306?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8]]>
                 </connection.admin.url>
                 <connection.url>
-                    <![CDATA[jdbc:mysql://localhost:3306/${db.name}?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8]]>
+                    <!-- <![CDATA[jdbc:mysql://localhost:3306/${db.name}?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8]]> -->
+                    <![CDATA[jdbc:mysql://116.196.73.58:3306?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8]]>
                 </connection.url>
                 <connection.username>root</connection.username>
                 <connection.password>root</connection.password>

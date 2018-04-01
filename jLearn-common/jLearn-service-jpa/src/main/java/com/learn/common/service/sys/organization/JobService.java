@@ -2,6 +2,8 @@ package com.learn.common.service.sys.organization;
 
 import java.util.Set;
 
+import com.learn.common.sys.organization.entity.Job;
+
 public interface JobService {
 
 	/*
@@ -12,4 +14,6 @@ public interface JobService {
 	 * 找工作职务的祖先
 	 */
 	public Set<Long> findAncestorIds(Iterable<Long> currentIds);
+	
+	public Job findOne(Long jobId);
 }

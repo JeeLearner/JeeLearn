@@ -17,7 +17,11 @@ import javax.servlet.jsp.JspException;
  */
 public class CheckboxesTag extends org.springframework.web.servlet.tags.form.CheckboxesTag {
 
-    private BindStatus bindStatus = null;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -5327693625334113120L;
+	private BindStatus bindStatus = null;
 
     @Override
     protected BindStatus getBindStatus() throws JspException {

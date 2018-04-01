@@ -18,4 +18,6 @@ public interface OrganizationService {
 	 * 找组织机构的祖先
 	 */
 	public Set<Long> findAncestorIds(Iterable<Long> currentIds);
+	
+	public Organization findOne(Long organizationId);
 }

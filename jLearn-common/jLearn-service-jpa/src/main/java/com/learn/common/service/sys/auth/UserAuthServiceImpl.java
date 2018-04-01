@@ -55,6 +55,7 @@ public class UserAuthServiceImpl implements UserAuthService {
 	 * @param user
 	 * @return
 	 */
+	@Override
 	public Set<Role> findRoles(User user) {
 
 		if (user == null) {
@@ -113,6 +114,7 @@ public class UserAuthServiceImpl implements UserAuthService {
 	 * @param user
 	 * @return
 	 */
+	@Override
 	public Set<String> findStringRoles(User user) {
 		Set<Role> roles = ((UserAuthService) AopContext.currentProxy()).findRoles(user);
 		return Sets.newHashSet(Collections2.transform(roles, new Function<Role, String>() {
@@ -131,6 +133,7 @@ public class UserAuthServiceImpl implements UserAuthService {
 	 * @param user
 	 * @return
 	 */
+	@Override
 	public Set<String> findStringPermissions(User user) {
 		Set<String> permissions = Sets.newHashSet();
 

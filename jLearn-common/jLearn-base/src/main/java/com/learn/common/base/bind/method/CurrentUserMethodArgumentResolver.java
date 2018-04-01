@@ -1,4 +1,4 @@
-package com.learn.common.base.bind.method.annotation;
+package com.learn.common.base.bind.method;
 
 import org.springframework.core.MethodParameter;
 import org.springframework.web.bind.support.WebDataBinderFactory;

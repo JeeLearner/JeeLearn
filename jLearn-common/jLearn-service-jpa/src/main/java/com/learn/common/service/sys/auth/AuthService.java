@@ -22,4 +22,6 @@ public interface AuthService {
 	 * 根据用户信息获取 角色
 	 */
 	public Set<Long> findRoleIds(Long userId, Set<Long> groupIds, Set<Long> organizationIds, Set<Long> jobIds, Set<Long[]> organizationJobIds);
+	
+	public Auth findOne(Long userId);
 }

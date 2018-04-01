@@ -17,7 +17,11 @@ import javax.servlet.jsp.JspException;
  */
 public class SelectTag extends org.springframework.web.servlet.tags.form.SelectTag {
 
-    private BindStatus bindStatus = null;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -3356677783212970009L;
+	private BindStatus bindStatus = null;
 
     @Override
     protected BindStatus getBindStatus() throws JspException {
