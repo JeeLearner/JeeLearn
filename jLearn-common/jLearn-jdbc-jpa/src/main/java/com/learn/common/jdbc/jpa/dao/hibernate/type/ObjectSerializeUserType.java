@@ -22,7 +22,12 @@ import java.sql.Types;
  */
 public class ObjectSerializeUserType implements UserType, Serializable {
 
-    @Override
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 7742497585200984108L;
+
+	@Override
     public int[] sqlTypes() {
         return new int[]{Types.VARCHAR};
     }

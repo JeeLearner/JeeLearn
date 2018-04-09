@@ -2,15 +2,15 @@
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="/WEB-INF/jsp/common/taglibs.jspf" %>
-<es:contentHeader/>
+<jee:contentHeader/>
 <div data-table="table" class="panel">
     <c:set var="type" value="sql"/>
     <%@include file="nav.jspf" %>
 
     <form method="post" class="form-inline">
-        <esform:hidden path="page.pn"/>
-        <esform:label path="sql">请输入SQL(不支持DDL/DCL执行)：</esform:label><br/>
-        <esform:textarea path="sql" style="width: 500px;height: 160px"/><br/>
+        <jeeform:hidden path="page.pn"/>
+        <jeeform:label path="sql">请输入SQL(不支持DDL/DCL执行)：</jeeform:label><br/>
+        <jeeform:textarea path="sql" style="width: 500px;height: 160px"/><br/>
         <input type="submit" class="btn" value="执行">
     </form>
 
@@ -65,7 +65,7 @@
     </div>
 
 </div>
-<es:contentFooter/>
+<jee:contentFooter/>
 <script type="text/javascript">
     $(".btn-pre-page").click(function() {
         var $pn = $("[name='page.pn']");

@@ -4,7 +4,7 @@
 <%@ page import="java.util.Comparator" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="/WEB-INF/jsp/common/taglibs.jspf" %>
-<es:contentHeader/>
+<jee:contentHeader/>
 
 <div data-table="table" class="panel">
     <c:set var="type" value="secondLevelCache"/>
@@ -169,7 +169,7 @@
     </table>
     <br/><br/>
 </div>
-<es:contentFooter/>
+<jee:contentFooter/>
 
 <%!
     //总命中率  命中次数  失效次数  被缓存的个数    所占内存大小   内存中的实体数

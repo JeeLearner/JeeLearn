@@ -8,15 +8,15 @@
 <%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="/WEB-INF/jsp/common/taglibs.jspf" %>
-<es:contentHeader/>
+<jee:contentHeader/>
 <div data-table="table" class="panel">
     <c:set var="type" value="ql"/>
     <%@include file="nav.jspf" %>
 
     <form method="post" class="form-inline">
-        <esform:hidden path="page.pn"/>
-        <esform:label path="ql">请输入QL：</esform:label><br/>
-        <esform:textarea path="ql" style="width: 500px;height: 160px"/><br/>
+        <jeeform:hidden path="page.pn"/>
+        <jeeform:label path="ql">请输入QL：</jeeform:label><br/>
+        <jeeform:textarea path="ql" style="width: 500px;height: 160px"/><br/>
         <input type="submit" class="btn" value="执行">
     </form>
 
@@ -97,7 +97,7 @@
     </div>
 
 </div>
-<es:contentFooter/>
+<jee:contentFooter/>
 <script type="text/javascript">
     $(".btn-pre-page").click(function() {
         var $pn = $("[name='page.pn']");

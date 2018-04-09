@@ -161,6 +161,7 @@
             <list>
                 <!-- 在web环境中一定要定位到classpath 否则默认到当前web应用下找  -->
                 <value>classpath:messages/messages</value>
+                <value>classpath:messages/messages_zh_CN</value>
                 <value>classpath:messages/ValidationMessages</value>
             </list>
         </property>

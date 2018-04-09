@@ -6,8 +6,8 @@
 <%@taglib prefix="pretty" tagdir="/WEB-INF/tags/pretty" %>
 <%@taglib prefix="shiro" uri="http://shiro.apache.org/tags" %>
 
-<%@taglib prefix="es" tagdir="/WEB-INF/tags" %>
+<%@taglib prefix="jee" tagdir="/WEB-INF/tags" %>
 <%@taglib prefix="sys" tagdir="/WEB-INF/tags/sys" %>
 <%@taglib prefix="maintain" tagdir="/WEB-INF/tags/maintain" %>
-<%@taglib prefix="esform" uri="/WEB-INF/tld/jlearn-form.tld" %>
-<%@taglib prefix="esfn" uri="/WEB-INF/tld/jlearn-functions.tld" %>
+<%@taglib prefix="jeeform" uri="/WEB-INF/tld/jlearn-form.tld" %>
+<%@taglib prefix="jeefn" uri="/WEB-INF/tld/jlearn-functions.tld" %>

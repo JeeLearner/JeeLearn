@@ -7,7 +7,7 @@
     <!-- 目的是让查询时使用这些标签 方便获取查询条件值 -->
     <description>Spring Framework JSP Form Tag Library</description>
     <tlib-version>3.0</tlib-version>
-    <short-name>esform</short-name>
+    <short-name>jeeform</short-name>
     <!-- <uri>http://www.sishuok.com/tags/es-form</uri> -->
 
     <tag>

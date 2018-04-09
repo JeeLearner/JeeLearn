@@ -4,7 +4,7 @@
 <%@ page import="java.util.Comparator" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="/WEB-INF/jsp/common/taglibs.jspf" %>
-<es:contentHeader/>
+<jee:contentHeader/>
 
 <div data-table="table" class="panel">
     <c:set var="type" value="query"/>
@@ -183,7 +183,7 @@
     </table>
     <br/><br/>
 </div>
-<es:contentFooter/>
+<jee:contentFooter/>
 <%!
     //排序：总命中率 命中次数  失效次数  被缓存的个数  执行次数 执行返回的总行数   平均执行时间  最长执行时间  最短执行时间
     private void sort(final String[] queries, final Statistics statistics, final String sortBy) {

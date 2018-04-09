@@ -8,8 +8,8 @@ import org.springframework.stereotype.Service;
 
 import com.learn.common.base.utils.security.Md5Utils;
 import com.learn.common.base.utils.web.UserLogUtils;
-import com.learn.common.exception.user.UserPasswordNotMatchException;
-import com.learn.common.exception.user.UserPasswordRetryLimitExceedException;
+import com.learn.common.exception.sys.user.UserPasswordNotMatchException;
+import com.learn.common.exception.sys.user.UserPasswordRetryLimitExceedException;
 import com.learn.common.sys.user.entity.User;
 
 import net.sf.ehcache.Cache;

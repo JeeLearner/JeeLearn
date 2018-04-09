@@ -6,7 +6,7 @@
             <div class="submenu">
                 <c:forEach items="${m.children}" var="c">
                     <ul>
-                        <es:submenu menu="${c}"/>
+                        <jee:submenu menu="${c}"/>
                     </ul>
                 </c:forEach>
             </div>

@@ -34,7 +34,7 @@
             >
         <!--enableMatrixVariables="true">-->
         <!-- 异步支持 默认30秒超时 -->
-        <!-- <mvc:async-support default-timeout="30000" task-executor="executor"/> -->
+        <mvc:async-support default-timeout="30000" task-executor="executor"/>
 
         <mvc:message-converters register-defaults="true">
             <!-- StringHttpMessageConverter编码为UTF-8，防止乱码 -->
@@ -70,8 +70,9 @@
         </mvc:message-converters>
 
         <mvc:argument-resolvers>
-        	<bean class="com.learn.common.base.bind.method.CurrentUserMethodArgumentResolver" />
-        	<bean class="com.learn.common.base.bind.method.PageableMethodArgumentResolver" />
+        	<bean class="com.learn.web.extra.bind.method.CurrentUserMethodArgumentResolver" />
+        	<bean class="com.learn.web.extra.bind.method.PageableMethodArgumentResolver" />
+            <bean class="com.learn.web.extra.bind.method.SearchableMethodArgumentResolver" />
             <!-- <bean class="com.sishuok.es.common.web.bind.method.annotation.PageableMethodArgumentResolver"/>
             <bean class="com.sishuok.es.common.web.bind.method.annotation.SearchableMethodArgumentResolver"/>
             <bean class="com.sishuok.es.common.web.bind.method.annotation.FormModelMethodArgumentResolver"/>

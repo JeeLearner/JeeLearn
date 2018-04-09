@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <%@include file="/WEB-INF/jsp/common/taglibs.jspf"%>
-<es:contentHeader />
+<jee:contentHeader />
 <div class="panel">
 		<div
 			class="paddt-40 paddb-40 widget-body bordered-left bordered-blueberry z-isoroll z-isoheight">
@@ -63,4 +63,4 @@ $('#btyes').on('click',function(){
 })
 
 </script>
-<es:contentFooter />
+<jee:contentFooter />

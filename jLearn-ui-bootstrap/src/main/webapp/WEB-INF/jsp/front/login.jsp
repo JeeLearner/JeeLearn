@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <%@include file="/WEB-INF/jsp/common/taglibs.jspf"%>
-<es:contentHeader title="用户登录" index="true" />
+<jee:contentHeader title="用户登录" index="true" />
 <div class="navbar navbar-fixed-top">
 	<div class="navbar-inner">
 		<a class="brand" href="#">&nbsp;&nbsp;JeeLearn</a>
@@ -25,11 +25,11 @@
 		<div class="form">
 
 			<div style="margin-right: 30px;">
-				<es:showMessage></es:showMessage>
+				<jee:showMessage></jee:showMessage>
 			</div>
 
 			<form id="loginForm" method="post" class="form-horizontal">
-				<es:BackURL hiddenInput="true" />
+				<jee:BackURL hiddenInput="true" />
 				<div class="control-group">
 					<label for="username">用户名、邮箱或手机号</label>
 					<div class="input-prepend">
@@ -86,7 +86,7 @@
 		</ul>
 	</div>
 </footer>
-<es:contentFooter />
+<jee:contentFooter />
 <script type="text/javascript">
 	$(function() {
 		$("#username").focus();

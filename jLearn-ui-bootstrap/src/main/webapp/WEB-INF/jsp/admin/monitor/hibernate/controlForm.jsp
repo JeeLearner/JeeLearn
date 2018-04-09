@@ -1,7 +1,7 @@
 <%@ page import="org.hibernate.stat.Statistics" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="/WEB-INF/jsp/common/taglibs.jspf" %>
-<es:contentHeader/>
+<jee:contentHeader/>
 <div data-table="table" class="panel">
     <c:set var="type" value="invalidate"/>
     <%@include file="nav.jspf" %>
@@ -34,8 +34,8 @@
                 </c:forEach>
             </select>
             &nbsp;&nbsp;
-            <esform:label path="entityIds">实体编号：</esform:label>
-            <esform:input path="entityIds" cssClass="input-medium" placeholder="多个之间，逗号分隔"/>
+            <jeeform:label path="entityIds">实体编号：</jeeform:label>
+            <jeeform:input path="entityIds" cssClass="input-medium" placeholder="多个之间，逗号分隔"/>
         </form>
         <div style="line-height: 70px;">
             <a class="btn btn-evict-entity">确定</a>
@@ -52,8 +52,8 @@
                 </c:forEach>
             </select>
             &nbsp;&nbsp;
-            <esform:label path="collectionEntityIds">集合所属实体编号：</esform:label>
-            <esform:input path="collectionEntityIds" cssClass="input-medium" placeholder="多个之间，逗号分隔"/>
+            <jeeform:label path="collectionEntityIds">集合所属实体编号：</jeeform:label>
+            <jeeform:input path="collectionEntityIds" cssClass="input-medium" placeholder="多个之间，逗号分隔"/>
         </form>
         <div style="line-height: 70px;">
             <a class="btn btn-evict-collection">确定</a>
@@ -80,7 +80,7 @@
     </div>
     <br/><br/>
 </div>
-<es:contentFooter/>
+<jee:contentFooter/>
 <script type="text/javascript">
     $(function() {
         $(".btn-evict-all").click(function() {

@@ -7,7 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.learn.common.base.bind.annotation.CurrentUser;
+import com.learn.web.extra.bind.annotation.CurrentUser;
+import com.learn.common.service.maintain.push.PushApi;
 import com.learn.common.service.sys.resource.ResourceService;
 import com.learn.common.sys.resource.entity.tmp.Menu;
 import com.learn.common.sys.user.entity.User;
@@ -27,11 +28,16 @@ public class IndexController {
 	@Autowired
 	private ResourceService resourceService;
 	
+	@Autowired
+	private PushApi pushApi;
+	
 	@RequestMapping(value = { "/{index:index;?.*}" }) // spring3.2.2 bug see
 	public String index(@CurrentUser User user, Model model) {
 
 		List<Menu> menus = resourceService.findMenus(user);
 		model.addAttribute("menus", menus);
+		
+		pushApi.offline(user.getId());
 		return "admin/index/index";
 	}
 	

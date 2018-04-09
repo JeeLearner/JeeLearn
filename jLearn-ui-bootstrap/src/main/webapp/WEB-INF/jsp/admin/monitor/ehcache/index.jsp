@@ -4,7 +4,7 @@
 <%@ page import="java.util.Comparator" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="/WEB-INF/jsp/common/taglibs.jspf" %>
-<es:contentHeader/>
+<jee:contentHeader/>
 <div data-table="table" class="panel">
     <%@include file="nav.jspf" %>
 
@@ -80,7 +80,7 @@
     </table>
     <br/><br/>
 </div>
-<es:contentFooter/>
+<jee:contentFooter/>
 <%!
         private void sort(final String[] cacheNames, final CacheManager cacheManager, final String sort) {
             Arrays.sort(cacheNames, new Comparator<String>() {

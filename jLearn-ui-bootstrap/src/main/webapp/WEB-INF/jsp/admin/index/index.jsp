@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <%@include file="/WEB-INF/jsp/common/taglibs.jspf"%>
-<es:contentHeader title="JeeLearn" index="true"/>
+<jee:contentHeader title="JeeLearn" index="true"/>
 
     <ul id="tabs-menu" class="dropdown-menu">
         <li><a class="close-current" href="#">关闭</a></li>
@@ -55,7 +55,7 @@
         <%@include file="menu.jsp" %>
     </div>
 </div>
-<es:contentFooter/>
+<jee:contentFooter/>
 <script type="text/javascript">
     $(function() {
         $.app.initIndex();

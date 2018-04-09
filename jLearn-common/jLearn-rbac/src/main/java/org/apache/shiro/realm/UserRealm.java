@@ -9,11 +9,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 
-import com.learn.common.exception.user.UserBlockedException;
-import com.learn.common.exception.user.UserException;
-import com.learn.common.exception.user.UserNotExistsException;
-import com.learn.common.exception.user.UserPasswordNotMatchException;
-import com.learn.common.exception.user.UserPasswordRetryLimitExceedException;
+import com.learn.common.exception.sys.user.UserBlockedException;
+import com.learn.common.exception.sys.user.UserException;
+import com.learn.common.exception.sys.user.UserNotExistsException;
+import com.learn.common.exception.sys.user.UserPasswordNotMatchException;
+import com.learn.common.exception.sys.user.UserPasswordRetryLimitExceedException;
 import com.learn.common.jdbc.jpa.dao.support.SimpleBaseRepositoryFactoryBean;
 import com.learn.common.service.sys.auth.UserAuthService;
 import com.learn.common.service.sys.user.UserService;

@@ -57,6 +57,9 @@ Maven依赖关系：https://github.com/JeeLearner/JeeLearn/tree/master/doc/JeeLe
 * 系统监控
 * 缓存实现
 
+##### 进行中
+* 通知功能
+
 ##### 未完成
 * 系统监控-拦截器：限制ip
 

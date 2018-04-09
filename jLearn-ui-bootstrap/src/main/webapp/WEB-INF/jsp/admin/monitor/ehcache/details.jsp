@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <%@include file="/WEB-INF/jsp/common/taglibs.jspf"%>
-<es:contentHeader />
+<jee:contentHeader />
 <style>
 .detail {
 	word-break: break-all;
@@ -8,15 +8,15 @@
 </style>
 <div data-table="table" class="panel">
 	<%@include file="nav.jspf"%>
-	<a href="<es:BackURL/>" class="btn btn-link pull-right">返回</a> <a
-		href="?BackURL=<es:BackURL/>" class="btn btn-link pull-right">刷新</a> <a
+	<a href="<jee:BackURL/>" class="btn btn-link pull-right">返回</a> <a
+		href="?BackURL=<jee:BackURL/>" class="btn btn-link pull-right">刷新</a> <a
 		class="btn btn-link pull-right btn-clear">清空</a>
 
 	<table class="table table-bordered">
 		<tbody>
 
 			<tr class="bold info">
-				<td colspan="2">${cacheName} 键列表 <esform:input
+				<td colspan="2">${cacheName} 键列表 <jeeform:input
 						path="searchText" class="input-medium pull-right no-margin"
 						placeholder="回车模糊查询" />
 				</td>
@@ -36,12 +36,12 @@
 	<br />
 	<br />
 </div>
-<es:contentFooter />
+<jee:contentFooter />
 <script type="text/javascript">
 $(function(){
 	$("#searchText").keyup(function(event){
 		if(event.keyCode == 13){
-			window.location.href = "?searchText=" + this.value + "&BackURL=<es:BackURL/>";
+			window.location.href = "?searchText=" + this.value + "&BackURL=<jee:BackURL/>";
 		}
 	});
 	

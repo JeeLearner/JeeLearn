@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.learn.common.base.bind.annotation.PageableDefaults;
+import com.learn.web.extra.bind.annotation.PageableDefaults;
 import com.learn.common.base.constants.Constants;
 import com.learn.common.jdbc.jpa.dao.hibernate.HibernateUtils;
 import com.learn.web.support.BaseController;

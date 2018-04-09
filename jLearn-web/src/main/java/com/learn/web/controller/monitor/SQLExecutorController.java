@@ -13,8 +13,6 @@ import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.TransactionCallback;
 import org.springframework.transaction.support.TransactionTemplate;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -32,7 +30,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 import com.google.common.collect.Lists;
-import com.learn.common.base.bind.annotation.PageableDefaults;
+import com.learn.web.extra.bind.annotation.PageableDefaults;
 import com.learn.common.base.constants.Constants;
 import com.learn.common.jdbc.jpa.dao.hibernate.HibernateUtils;
 import com.learn.web.support.BaseController;
@@ -55,7 +53,7 @@ public class SQLExecutorController extends BaseController {
     @Autowired
     private PlatformTransactionManager transactionManager;
 
-    @GetMapping(value = "sql")
+    @RequestMapping(value = "sql", method = RequestMethod.GET)
     public String showSQLForm() {
         return viewName("sqlForm");
     }
@@ -70,7 +68,7 @@ public class SQLExecutorController extends BaseController {
      * @return
      */
     @PageableDefaults(pageNumber = 0, value = 10)
-    @PostMapping(value = "/sql")
+    @RequestMapping(value = "/sql", method = RequestMethod.POST)
     public String executeQL(final Model model,final Pageable pageable, 
             final @RequestParam("sql") String sql
     ) {

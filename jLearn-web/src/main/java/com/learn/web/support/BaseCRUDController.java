@@ -1,16 +1,15 @@
 package com.learn.web.support;
 
-import com.learn.common.base.bind.annotation.PageableDefaults;
+import com.learn.web.extra.bind.annotation.PageableDefaults;
 import com.learn.common.base.constants.Constants;
 import com.learn.common.jdbc.jpa.entity.AbstractEntity;
 import com.learn.common.jdbc.jpa.entity.search.Searchable;
 import com.learn.common.jdbc.jpa.service.BaseService;
 import com.learn.web.support.permission.PermissionList;
 
-import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.ui.Model;
-import org.springframework.util.Assert;
 import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
@@ -30,7 +29,7 @@ public abstract class BaseCRUDController<M extends AbstractEntity, ID extends Se
 		extends BaseController<M, ID> {
 
 	@Autowired
-	private BaseService<M, ID> baseService;
+	protected BaseService<M, ID> baseService;
 
 	private boolean listAlsoSetCommonData = false;
 
@@ -58,7 +57,6 @@ public abstract class BaseCRUDController<M extends AbstractEntity, ID extends Se
 		if (permissionList != null) {
 			this.permissionList.assertHasViewPermission();
 		}
-
 		model.addAttribute("page", baseService.findAll(searchable));
 		if (listAlsoSetCommonData) {
 			setCommonData(model);

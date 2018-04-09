@@ -3,7 +3,7 @@
 <%@ page import="org.hibernate.stat.Statistics" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="/WEB-INF/jsp/common/taglibs.jspf" %>
-<es:contentHeader/>
+<jee:contentHeader/>
 
 <div data-table="table" class="panel">
     <c:set var="type" value="entityAndCollectionCRUDCount"/>
@@ -159,4 +159,4 @@
     </table>
     <br/><br/>
 </div>
-<es:contentFooter/>
+<jee:contentFooter/>
