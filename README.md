@@ -59,8 +59,9 @@ Maven依赖关系：https://github.com/JeeLearner/JeeLearn/tree/master/doc/JeeLe
 * 通知功能
 
 ##### 进行中
-* 消息功能
-
+* 系统管理
+    *  资源管理
+    
 ##### 未完成
 * 系统监控-拦截器：限制ip
 
