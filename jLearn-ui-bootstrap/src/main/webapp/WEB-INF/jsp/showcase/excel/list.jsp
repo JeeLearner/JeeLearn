@@ -103,13 +103,8 @@
                 </shiro:hasPermission>
 			</div>
 		</div>
-		<div class="span4">
+		<div class="span6">
 			<%@include file="searchForm.jsp" %>
-		</div>
-		<div class="span2">
-			<div class="btn-group">
-				<a class="btn" href="${ctx}/admin/poll" id="test">测试</a>
-			</div>
 		</div>
 	</div>
 	<%@include file="listTable.jsp" %>
