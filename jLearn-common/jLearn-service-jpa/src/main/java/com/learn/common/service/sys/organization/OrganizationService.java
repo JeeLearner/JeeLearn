@@ -15,9 +15,15 @@ public interface OrganizationService {
 	public List<Organization> findAll();
 	
 	/*
-	 * 找组织机构的祖先
+	 * 找组织机构的祖先Ids
 	 */
 	public Set<Long> findAncestorIds(Iterable<Long> currentIds);
+	/*
+	 * 找组织机构的祖先
+	 */
+	public List<Organization> findAncestor(String parentIds);
 	
 	public Organization findOne(Long organizationId);
+	
+	
 }

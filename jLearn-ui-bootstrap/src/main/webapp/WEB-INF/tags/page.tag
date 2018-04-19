@@ -13,7 +13,7 @@
 <%@ attribute name="pageSize" type="java.lang.Integer" required="false" description="每页大小" %>
 <%@ attribute name="simple" type="java.lang.Boolean" required="false" description="是否简单风格" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix="es" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="jee" tagdir="/WEB-INF/tags" %>
 
 <c:if test="${empty pageSize}">
     <c:set var="pageSize" value="${page.size}"/>

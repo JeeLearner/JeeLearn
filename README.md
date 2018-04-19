@@ -64,6 +64,7 @@ Maven依赖关系：https://github.com/JeeLearner/JeeLearn/tree/master/doc/JeeLe
     
 ##### 未完成
 * 系统监控-拦截器：限制ip
+* 组织机构-移动节点、查看子节点时新增子节点
 
 
 

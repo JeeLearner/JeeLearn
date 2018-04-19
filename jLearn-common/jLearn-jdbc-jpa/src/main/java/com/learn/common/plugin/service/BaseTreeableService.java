@@ -22,7 +22,7 @@ import com.learn.common.jdbc.jpa.entity.search.filter.SearchFilterHelper;
 import com.learn.common.jdbc.jpa.service.BaseService;
 import com.learn.common.plugin.entity.Treeable;
 
-public class BaseTreeableService<M extends BaseEntity<ID> & Treeable<ID>, ID extends Serializable>
+public abstract class BaseTreeableService<M extends BaseEntity<ID> & Treeable<ID>, ID extends Serializable>
 		extends BaseService<M, ID> {
 
 	private final String DELETE_CHILDREN_QL;
@@ -353,7 +353,7 @@ public class BaseTreeableService<M extends BaseEntity<ID> & Treeable<ID>, ID ext
         repositoryHelper.batchUpdate(UPDATE_CHILDREN_PARENT_IDS_QL, newSourceChildrenParentIds, oldSourceChildrenParentIds);
     }
     
-    private void addExcludeSearchFilter(Searchable searchable, M excludeM) {
+    public void addExcludeSearchFilter(Searchable searchable, M excludeM) {
         if (excludeM == null) {
             return;
         }

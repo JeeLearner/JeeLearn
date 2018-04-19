@@ -453,10 +453,10 @@ $.zTree = {
         }
     },
     initMaintainBtn : function(maintainUrlPrefix, tableId, async) {
-        var updateUrl = maintainUrlPrefix + "/{id}/update",
+    	var updateUrl = maintainUrlPrefix + "/{id}/update",
             deleteUrl = maintainUrlPrefix + "/batch/delete",
             moveTreeUrl = maintainUrlPrefix + "/{id}/move?async=" + async;
-
+        
         $("#moveTree").off("click").on("click", function () {
             var table = $("#" + tableId);
             var checkbox = $.table.getFirstSelectedCheckbox(table);

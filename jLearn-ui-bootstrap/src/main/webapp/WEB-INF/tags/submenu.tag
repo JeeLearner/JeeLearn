@@ -2,7 +2,7 @@
 <%@ attribute name="menu" type="com.learn.common.sys.resource.entity.tmp.Menu" required="true" description="当前菜单" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
-<%@taglib prefix="es" tagdir="/WEB-INF/tags" %>
+<%@taglib prefix="jee" tagdir="/WEB-INF/tags" %>
 <c:choose>
     <c:when test="${!menu.hasChildren}">
         <li><a href="<%=menuUrl(request, menu.getUrl())%>">${menu.name}</a></li>
@@ -12,7 +12,7 @@
             <a href="#">${menu.name}</a>
             <ul>
                 <c:forEach items="${menu.children}" var="menu2">
-                    <es:submenu menu="${menu2}"/>
+                    <jee:submenu menu="${menu2}"/>
                 </c:forEach>
             </ul>
         </li>
