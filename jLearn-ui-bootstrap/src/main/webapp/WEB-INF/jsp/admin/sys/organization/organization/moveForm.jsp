@@ -23,7 +23,7 @@
     <div class="control-group">
         <label class="control-label"><fmt:message key="tree.target" /> </label>
         <div class="controls input-append" title="选择目标节点">
-            <input type="hidden" id="targetId" name="targetId" value="${target.id}">
+            <input type="hidden" id="targetId" name="target" value="${target.id}">
             <input type="text" id="targetName" name="targetName" value="${target.name}" class="validate[required]" readonly="readonly">
             <a id="selectTree"  href="javascript:;">
                 <span class="add-on"><i class="icon-chevron-down"></i></span>

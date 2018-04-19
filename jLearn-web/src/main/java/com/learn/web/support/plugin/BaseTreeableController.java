@@ -339,7 +339,6 @@ public abstract class BaseTreeableController<M extends BaseEntity<ID> & Treeable
      * @param redirectAttributes
      * @return
      */
-    // TODO 报错
     @RequestMapping(value = "{source}/move", method = RequestMethod.POST)
     @PageableDefaults(sort = {"parentIds=asc", "weight=asc"})
     public String move(

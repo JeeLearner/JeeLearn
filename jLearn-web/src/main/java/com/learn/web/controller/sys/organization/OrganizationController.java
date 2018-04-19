@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
@@ -15,6 +16,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import com.learn.common.base.constants.Constants;
 import com.learn.common.service.sys.organization.OrganizationService;
 import com.learn.common.sys.organization.entity.Organization;
+import com.learn.web.extra.bind.annotation.PageableDefaults;
 import com.learn.web.support.plugin.BaseTreeableController;
 
 @Controller
@@ -63,14 +65,6 @@ public class OrganizationController extends BaseTreeableController<Organization,
 
 	
 	
-	//TODO 测试
-	@RequestMapping("")
-	@ResponseBody
-	public int testService(){
-		//User user = organizationService.filterForCanShow(, organizationJobIds);;
-		List<Organization> list = organizationService.findAll();
-		return list.size();
-		
-	}
+	
 	
 }

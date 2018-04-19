@@ -36,7 +36,7 @@
         <div class="span4">
             <div class="btn-group">
                 <shiro:hasPermission name="sys:organization:create">
-                <a id="appendChild" class="btn btn-custom">
+                <a id="appendChild" class="btn btn-custom no-disabled" href="${ctx}/admin/sys/organization/organization/${parent.id}/appendChild?BackURL=<jee:BackURL/>">
                     <i class="icon-file-alt"></i>
                     <fmt:message key="tree.parent.addchild" />
                 </a>
