@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="/WEB-INF/jsp/common/taglibs.jspf"%>
-<%@include file="/WEB-INF/jsp/common/import-zTree-css.jspf"%>
 <jee:contentHeader/>
+<%@include file="/WEB-INF/jsp/common/import-zTree-css.jspf"%>
 <%@include file="/WEB-INF/jsp/common/import-zTree-js.jspf"%>
 
 
@@ -25,7 +25,6 @@
 
 <script type="text/javascript">
     var async = ${not empty param.async and param.async eq true};
-
     $(function() {
         var zNodes =[
             <c:forEach items="${trees}" var="m">
@@ -38,7 +37,7 @@
             urlPrefix : "${ctx}/admin/sys/organization/organization",
             async : async,
             onlyDisplayShow:${param['search.show_eq'] eq true},
-            permission: <jee:treePermission resourceIdentity="sys:resource"/>,
+            permission: <jee:treePermission resourceIdentity="sys:organization"/>,
             autocomplete : {
                 enable : true
             },

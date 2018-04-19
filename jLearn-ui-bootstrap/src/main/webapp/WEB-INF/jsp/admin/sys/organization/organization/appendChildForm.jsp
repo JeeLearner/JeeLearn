@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="/WEB-INF/jsp/common/taglibs.jspf"%>
-<%@include file="/WEB-INF/jsp/common/admin/import-maintain-js.jspf"%>
 <jee:contentHeader/>
+<%@include file="/WEB-INF/jsp/common/admin/import-maintain-js.jspf"%>
 <div class="panel">
 	<%@include file="nav.jspf" %>
 	

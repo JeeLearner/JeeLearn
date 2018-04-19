@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="/WEB-INF/jsp/common/taglibs.jspf"%>
 <jee:contentHeader/>
-
+<%@include file="/WEB-INF/jsp/common/import-zTree-js.jspf"%>
 <div data-table="table" class="panel">
 
     <ul class="nav nav-tabs">
@@ -94,7 +94,6 @@
 </div>
 
 <jee:contentFooter/>
-<%@include file="/WEB-INF/jsp/common/import-zTree-js.jspf"%>
 <script type="text/javascript">
     $(function() {
         var tableId = "table";
